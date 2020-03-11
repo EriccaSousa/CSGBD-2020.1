@@ -13,17 +13,17 @@ public class Tree {
 			System.out.println("Raiz " + value);
 			raiz = new Node(value);
 		} else {
-			if (value < node.getValue()) {
+			if (value < node.getValue()) { //IF de recursão
 				if (node.getLeftNode() != null) {
-					inserir(node.getLeftNode(), value);
+					inserir(node.getLeftNode(), value); //Passo recursivo
 				} else {
 					System.out.println("Inserindo " + value + " a esquerda de " + node.getValue());
 					node.setLeftNode(new Node(value));
 				}
 
 			} else {
-				if (node.getRightNode() != null) {
-					inserir(node.getRightNode(), value);
+				if (node.getRightNode() != null) { //IF de recursão
+					inserir(node.getRightNode(), value); //Passo recursivo
 				} else {
 					System.out.println("Inserindo " + value + " a direita de " + node.getValue());
 					node.setRightNode(new Node(value));
