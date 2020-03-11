@@ -5,6 +5,10 @@ public class Node {
 	private Node leftNode;
 	private Node rightNode;
 
+	public Node() {
+
+	}
+
 	public Node(int value) {
 		super();
 		this.value = value;
