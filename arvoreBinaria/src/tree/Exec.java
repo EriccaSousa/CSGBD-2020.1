@@ -18,7 +18,7 @@ public class Exec {
 		System.out.println("\nImprimir: ");
 		Tree.preordem(Tree.raiz);
 		
-		System.out.println("\nBuscar: ");
+		System.out.println("\n\nBuscar: ");
 		Tree.buscar(Tree.raiz, 12);
 
 	}

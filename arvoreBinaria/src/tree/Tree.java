@@ -38,14 +38,16 @@ public class Tree {
 		} else {
 			if (value < raiz.getValue()) {
 				if (value == raiz.getLeftNode().getValue()) {
-					System.out.println("Valor encontrado!!\n valor informado: " + value + "\n filho da esquerda: " + raiz.getLeftNode().getValue());
-				}else {
+					System.out.println("Valor encontrado!!\n valor informado: " + value + "\n filho da esquerda: "
+							+ raiz.getLeftNode().getValue());
+				} else {
 					buscar(raiz.getLeftNode(), value);
 				}
 			} else {
 				if (value == raiz.getRightNode().getValue()) {
-					System.out.println("Valor encontrado!!\n valor informado: " + value + "\n filho da esquerda: " + raiz.getRightNode().getValue());
-				}else {
+					System.out.println("Valor encontrado!!\n valor informado: " + value + "\n filho da esquerda: "
+							+ raiz.getRightNode().getValue());
+				} else {
 					buscar(raiz.getRightNode(), value);
 				}
 			}
